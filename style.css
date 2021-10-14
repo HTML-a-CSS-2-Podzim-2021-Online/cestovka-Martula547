@@ -1,0 +1,86 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 15px 10px 30px 10px;
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+    padding: 30px 0;   
+}
+li {
+    display: inline-block; 
+}
+ul a {
+    text-decoration: none;
+    padding: 15px 15px;
+    color: orangered;
+}
+a:hover {
+    color: white;
+    font-weight: bold;
+    background-color: orangered;
+}
+.produkt {
+    display: flex;
+    flex-direction: column;
+}
+.produkt--palmy {
+    background-image: url("podklady/palmy.jpg");
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    margin-bottom: 16px;
+}
+.cena {
+    padding: 15px;
+    background-color: orangered;
+    width: 80px;
+    font-weight: bold;
+    margin: 16px 260px 75px 16px;
+    color: white;
+}
+.produkt--palmy h3 {
+    margin: 0px 90px 25px 16px;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+}
+.popisek  {
+    font-size: 13px;
+    text-align: left;
+    margin: 0 auto 25px 16px;
+}
+.produkt--jezera {
+    background-image: url("podklady/jezero.jpg");
+    background-size: cover;
+    margin-bottom: 16px;
+}
+.produkt--nakole {
+    background-image: url("podklady/nakole.jpg");
+    background-size: cover;
+    margin-bottom: 16px;
+}
+.produkt h3 {
+    color: white;
+    text-align: left;
+    margin: 0 auto 23px 16px;
+}
+.sluzby {
+    display: flex;
+    flex-direction: column;
+}
+.sluzby--podporanamiste {
+    display: flex;
+    background-color: rgb(228, 224, 224);
+}
+.pravacast {
+    display: flex;
+    flex-direction: column;
+    padding-top: 17px;
+    text-align: left;
+    margin: 0;
+}
+.sluzby img {
+    padding: 15px 25px 45px 25px;
+}
