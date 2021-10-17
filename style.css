@@ -31,7 +31,7 @@ a:hover {
     color: white;
     margin-bottom: 16px;
 }
-.cena {
+.produkt--cena {
     padding: 15px;
     background-color: orangered;
     width: 80px;
@@ -46,7 +46,7 @@ a:hover {
     text-align: left;
     font-family: 'Montserrat', sans-serif;
 }
-.popisek  {
+.produkt--popisek  {
     font-size: 13px;
     text-align: left;
     margin: 0 auto 25px 16px;
@@ -54,11 +54,13 @@ a:hover {
 .produkt--jezera {
     background-image: url("podklady/jezero.jpg");
     background-size: cover;
+    background-position: center bottom;
     margin-bottom: 16px;
 }
 .produkt--nakole {
     background-image: url("podklady/nakole.jpg");
     background-size: cover;
+    background-position: center bottom;
     margin-bottom: 16px;
 }
 .produkt h3 {
@@ -66,21 +68,75 @@ a:hover {
     text-align: left;
     margin: 0 auto 23px 16px;
 }
-.sluzby {
+
+
+.karta {
     display: flex;
-    flex-direction: column;
+    align-items: flex-start;
+    background-color: rgb(226, 221, 221);
+    margin-bottom: 10px;
+    padding: 15px;
 }
-.sluzby--podporanamiste {
-    display: flex;
-    background-color: rgb(228, 224, 224);
-}
-.pravacast {
-    display: flex;
-    flex-direction: column;
-    padding-top: 17px;
+
+.karta__pravacast {
     text-align: left;
     margin: 0;
 }
-.sluzby img {
-    padding: 15px 25px 45px 25px;
+.karta h3 {
+    color: orangered;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 15px;
+
 }
+.karta p {
+    font-size: 13px;
+    margin: 0;
+
+}
+
+.karta--sloupec {
+    flex-direction: column;
+    text-align: left;
+}
+
+
+
+/* .sedyramecek {
+    background-color: gray;
+    padding: 10px;
+    margin: 10px;
+    text-align: left;
+}
+
+.sedyramecek h3 {
+    color: orange;
+    font-size: 18px;
+    margin: 0;
+}
+
+.sedyramecek p {
+    margin-top: 10px;
+}
+
+.sedyramecek--vycentrovany {
+    text-align: center;
+}
+
+.sedyramecek--hlavni h3 {
+    font-size: 24px; 
+}
+
+.sedyramecek--hlavni p {
+    font-weight: bold;
+}
+
+.sluzbicky .obsah {
+    display: flex;
+    flex-direction: row;
+}
+
+.sluzbicky .obsah > * {
+    flex: 1 1 0;
+} */
