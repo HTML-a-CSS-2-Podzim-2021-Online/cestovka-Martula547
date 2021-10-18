@@ -68,8 +68,6 @@ a:hover {
     text-align: left;
     margin: 0 auto 23px 16px;
 }
-
-
 .karta {
     display: flex;
     align-items: flex-start;
@@ -80,7 +78,9 @@ a:hover {
 
 .karta__pravacast {
     text-align: left;
-    margin: 0;
+    margin: 0 0 0 20px;
+    border: 5px solid pink;
+    
 }
 .karta h3 {
     color: orangered;
@@ -88,20 +88,44 @@ a:hover {
     font-weight: 500;
     margin-top: 0;
     margin-bottom: 15px;
-
 }
 .karta p {
     font-size: 13px;
     margin: 0;
-
+}
+.seznamnovinek h2 {
+    text-align: left;
+    font-size: 18px;
 }
 
 .karta--sloupec {
     flex-direction: column;
     text-align: left;
+    padding: 17px;
+    
+}
+.karta--sloupec h3 {
+    padding-top: 12px;
+    font-size: 13px;
+    
+}
+.karta--datum {
+    color: gray;
+    padding: 0;
+    font-weight: normal;
 }
 
 
+
+
+footer {
+    background-color: rgb(71, 71, 71);
+    padding-top: 18px;
+    padding-bottom: 18px;
+    color: white;
+    font-size: 14px;
+    margin-top: 30px;
+}
 
 /* .sedyramecek {
     background-color: gray;
