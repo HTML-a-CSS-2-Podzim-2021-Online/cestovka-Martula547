@@ -1,47 +1,24 @@
-body {
-    font-family: 'Montserrat', sans-serif;
-    margin: 15px 10px 30px 10px;
-    text-align: center;
-}
-ul {
-    list-style-type: none;
-    padding: 30px 0;   
-}
-li {
-    display: inline-block; 
-}
-ul a {
-    text-decoration: none;
-    padding: 15px 15px;
-    color: orangered;
-}
-a:hover {
-    color: white;
-    font-weight: bold;
-    background-color: orangered;
-}
 .produkt {
     display: flex;
     flex-direction: column;
+    color: white;
 }
-.produkt--palmy {
+.produkt__cena {
+    padding: 10px;
+    background-color: var(--hlavni-barva);
+    width: 80px;
+    margin: 20px auto 20px 20px;
+}
+.produkt--hlavnispopisem {
     background-image: url("podklady/palmy.jpg");
     background-size: cover;
     background-position: center center;
-    color: white;
+    height: 210px;
+    width: 100%;
     margin-bottom: 16px;
 }
-.produkt--cena {
-    padding: 15px;
-    background-color: orangered;
-    width: 80px;
-    font-weight: bold;
-    margin: 16px 260px 75px 16px;
-    color: white;
-}
-.produkt--palmy h3 {
-    margin: 0px 90px 25px 16px;
-    font-weight: bold;
+.produkt--hlavnispopisem h3 {
+    margin: 50px 90px 20px 20px;
     font-size: 24px;
     text-align: left;
     font-family: 'Montserrat', sans-serif;
@@ -49,41 +26,44 @@ a:hover {
 .produkt--popisek  {
     font-size: 13px;
     text-align: left;
-    margin: 0 auto 25px 16px;
+    margin: 0 10px 25px 20px;
 }
-.produkt--jezera {
-    background-image: url("podklady/jezero.jpg");
+.produkt--vedlejsi {
     background-size: cover;
     background-position: center bottom;
     margin-bottom: 16px;
+}
+.produkt--vedlejsi h3 {
+    text-align: left;
+    margin: 0 auto 30px 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.produkt--jezero {
+    background-image: url("podklady/jezero.jpg");
 }
 .produkt--nakole {
     background-image: url("podklady/nakole.jpg");
-    background-size: cover;
-    background-position: center bottom;
-    margin-bottom: 16px;
-}
-.produkt h3 {
-    color: white;
-    text-align: left;
-    margin: 0 auto 23px 16px;
 }
 .karta {
     display: flex;
     align-items: flex-start;
     background-color: rgb(226, 221, 221);
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     padding: 15px;
 }
-
 .karta__pravacast {
+    display: flex;
+    flex-direction: column;
     text-align: left;
-    margin: 0 0 0 20px;
-    border: 5px solid pink;
-    
+    margin: 0 0 0 30px;
+    width: 90%;
+}
+.karta img {
+    width: 10%;
 }
 .karta h3 {
-    color: orangered;
+    color: var(--hlavni-barva);
     font-size: 16px;
     font-weight: 500;
     margin-top: 0;
@@ -93,41 +73,54 @@ a:hover {
     font-size: 13px;
     margin: 0;
 }
-.seznamnovinek h2 {
+h2 {
     text-align: left;
     font-size: 18px;
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
-
 .karta--sloupec {
     flex-direction: column;
     text-align: left;
     padding: 17px;
-    
 }
 .karta--sloupec h3 {
     padding-top: 12px;
-    font-size: 13px;
-    
+    font-size: 13px;  
 }
 .karta--datum {
     color: gray;
     padding: 0;
     font-weight: normal;
 }
-
-
-
-
-footer {
-    background-color: rgb(71, 71, 71);
-    padding-top: 18px;
-    padding-bottom: 18px;
-    color: white;
-    font-size: 14px;
-    margin-top: 30px;
+.karta--sloupec p {
+    font-weight: 500;
+}
+.produkt--last h3 {
+    margin: 3px 90px 15px 20px;
+    font-weight: 500;
+}
+.produkt--last {
+    background-image: url("podklady/lodicka.jpg");
+}
+.produkt--grandcanyon {
+    background-image: url("podklady/podkova.jpg");
+}
+.produkt--kanary {
+    background-image: url("podklady/zatoka.jpg");
+    margin: 0;
 }
 
-/* .sedyramecek {
+
+
+
+
+
+
+
+
+
+/*.sedyramecek {
     background-color: gray;
     padding: 10px;
     margin: 10px;

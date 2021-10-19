@@ -6,6 +6,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Cestovka</title>
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="spolecne.css">
+	<link rel="stylesheet" href="hlavicka.css">
+	<link rel="stylesheet" href="paticka.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
@@ -24,45 +27,28 @@
 		</nav>
 	</header>
 
-	<!-- <div class="sedyramecek">
-		<h3>Kolik kg můžu zabalit do letadla</h3>
-		<p>Kolik chcete. Ale víc než 5kg vás bude stát majland.</p>
-	</div>
-
-	<section class="sluzbicky">
-		<h2>Služby</h2>
-		<div class="obsah">
-			<div class="sedyramecek sedyramecek--vycentrovany sedyramecek--hlavni">
-				<h3>Nošení zavazedel</h3>
-				<p>Celou vaši cestu vás bude doprovázet nosič zavazadel</p>
-			</div>
-			<div class="sedyramecek sedyramecek--vycentrovany">
-				<h3>Vějíř</h3>
-				<p>Každé poledne 1h ovívání.</p>
-			</div>
-			<div class="sedyramecek sedyramecek--vycentrovany">
-				<h3>Pojištění</h3>
-				<p>Platíme za vás základní pojištění zavazadel po celou dobu pobytu.</p>
-			</div>
-		</div>
-	</section> -->
-		
+	
 	<div class="produkty">
-		<div class= "produkt produkt--palmy produkt--spopisem">
-			<p class="produkt produkt--cena">17 600 Kč</p>
-			<h3>Pohoda pod palmami</h3>
-			<p class="produkt produkt--popisek">Nejlepší dovolená pro nejvíc nejlínější lidi na světě</p>
-		</div>
-		<div class="produkt produkt--jezera">
-			<p class="produkt produkt--cena">8 490 Kč</p>
-			<h3>Klid u jezera</h3>
-		</div>
-		<div class="produkt produkt--nakole">
-			<p class="produkt produkt--cena">4 990 Kč</p>
-			<h3>Výlet na kole</h3>
+		<div class= "produkt">
+			<div class="produkt produkt--hlavnispopisem">
+				<p class="produkt produkt__cena">17 600 Kč</p>
+				<h3>Pohoda pod palmami</h3>
+				<p class="produkt produkt--popisek">Nejlepší dovolená pro nejvíc nejlínější lidi na světě</p>
+			</div>
+			<div class="produkt produkt--vedlejsi">
+				<div class="produkt produkt--vedlejsi produkt--jezero">
+					<p class="produkt produkt__cena">8 490 Kč</p>
+					<h3>Klid u jezera</h3>
+				</div>
+				<div class="produkt produkt--vedlejsi produkt--nakole">
+					<p class="produkt produkt__cena">4 990 Kč</p>
+					<h3>Výlet na kole</h3>
+				</div>
+			</div>
+			
 		</div>
 	</div>
-
+	
 	<div class="sluzby">
 		<div class="karta">
 			<img src="podklady/map.svg" alt="ikonka podpora">
@@ -72,22 +58,24 @@
 			</div>
 		</div>
 		
-		<div class="karta">
-			<img src="podklady/plane.svg" alt="ikonka letadlo">
-			<div class="karta__pravacast">
-				<h3>Služby na letišti</h3>
-				<p>Při odletu tam i zpět za vás odbavíme vaše zavadla. Na letišti nebudete čekat.</p>
+		<div class="karty">
+			<div class="karta">
+				<img src="podklady/plane.svg" alt="ikonka letadlo">
+				<div class="karta__pravacast">
+					<h3>Služby na letišti</h3>
+					<p>Při odletu tam i zpět za vás odbavíme vaše zavadla. Na letišti nebudete čekat.</p>
+				</div>
 			</div>
-		</div>
-
-		<div class="karta">
-			<img src="podklady/globe.svg" alt="ikonka zeměkoule">
-			<div class="karta__pravacast">
-				<h3>Do celého světa</h3>
-				<p>Nabízíme pravidelné slevy na vybraných destinací na všech kontinentech.</p>
+			
+			<div class="karta">
+				<img src="podklady/globe.svg" alt="ikonka zeměkoule">
+				<div class="karta__pravacast">
+					<h3>Do celého světa</h3>
+					<p>Nabízíme pravidelné slevy na vybraných destinací na všech kontinentech.</p>
+				</div>
 			</div>
-		</div>
-
+		</div>	
+		
 		<div class="karta">
 			<img src="podklady/shield.svg" alt="ikonka štít">
 			<div class="karta__pravacast">
@@ -95,52 +83,80 @@
 				<p>Není-li v cílové destinaci v čase odletu bezpečno, vrátíme vám peníze.</p>
 			</div>
 		</div>
-	</div>
 		
-	<div class="produkty">
-		<h2>Last minute zájezdy</h2>
+		
+		<div class="produkty">
+			<h2>Last minute zájezdy</h2>
+			<div class="produkt">
+				<div class="produkt produkt--hlavnispopisem produkt--last">
+					<p class="produkt produkt__cena">15 900 Kč</p>
+					<h3>Romantika u horského jezera</h3>
+					<p class="produk produkt--popisek">Dechberoucí výhledy na horské štíty a zrcadlovou hladinu jezera.</p>
+				</div>
+				<div class="produkt produkt--vedlejsi">
+					<div class="produkt produkt--vedlejsi produkt--grandcanyon">
+						<p class="produkt produkt__cena">18 500 Kč</p>
+						<h3>Grand Canyon</h3>
+					</div>
+					<div class="produkt produkt--vedlejsi produkt--kanary">
+						<p class="produkt produkt__cena">8 900 Kč</p>
+						<h3>Pěšky po Kanárských ostrovech</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="seznamnovinek">
+			<h2>Novinky</h2>
+			<div class="karta karta--sloupec">
+				<p class="">15. 8. 2020</p>
+				<h3>Magický Zanzibar</h3>
+				<p>Zanzibar, při vyslovení jména tohoto kouzelného ostrova, se vybaví vůně exotických koření, příznivé klima, teplé moře,exotická flóra i fauna.</p>
+			</div>
+			
+			<div class="karta karta--sloupec">
+				<p class="karta karta--sloupec karta--datum">31. 9. 2020</p>
+				<h3>Návrat českých občanů ze zahraničí</h3>
+				<p>Všichni občané ČR vracející se ze zahraničí zpět se musí řídit podmínkami uvedenými v platném Ochranném opatření
+					Ministerstva zdravotnictví ČR.</p>
+				</div>
+				
+				<div class="karta karta--sloupec">
+					<p class="karta karta--sloupec karta--datum">6. 10. 2020</p>
+					<h3>Na Kubu s PCR testem</h3>
+					<p>Při vstupu do země se buď musíte prokázat negativním PCR testem na Covid-19, který byl proveden max. 72 hodin předpříletem do destinace.</p>
+				</div>
+			</div>
+			
+			<footer>©2021, Czechitas</footer>	
+		</body>
+		
+		</html>
+
+
+
+
+		
+		
+		<!-- <div class="sedyramecek">
+			<h3>Kolik kg můžu zabalit do letadla</h3>
+			<p>Kolik chcete. Ale víc než 5kg vás bude stát majland.</p>
+		</div>
 	
-		<div class="produkt produkt--grandcanyon">
-			<p>18 500 Kč</p>
-			<h3>Grand Canyon</h3>
-		</div>
-		
-		
-		<div class="produkt--peskykanarskeostrovy">
-			<p>8 900 Kč</p>
-			<h3>Pěšky po Kanárských ostrovech</h3>
-		</div>
-		
-		<div class="produkt--romantikaujezera">
-			<p>15 900 Kč</p>
-			<h3>Romantika u horského jezera</h3>
-			<p>Dechberoucí výhledy na horské štíty a zrcadlovou hladinu jezera.</p>
-		</div>
-	</div>
-
-	<div class="seznamnovinek">
-		<h2>Novinky</h2>
-		<div class="karta karta--sloupec">
-			<p class="karta karta--sloupec karta--datum">15. 8. 2020</p>
-			<h3>Magický Zanzibar</h3>
-			<p>Zanzibar, při vyslovení jména tohoto kouzelného ostrova, se vybaví vůně exotických koření, příznivé klima, teplé moře,exotická flóra i fauna.</p>
-		</div>
-
-		<div class="karta karta--sloupec">
-			<p class="karta karta--sloupec karta--datum">31. 9. 2020</p>
-			<h3>Návrat českých občanů ze zahraničí</h3>
-			<p>Všichni občané ČR vracející se ze zahraničí zpět se musí řídit podmínkami uvedenými v platném Ochranném opatření
-			Ministerstva zdravotnictví ČR.</p>
-		</div>
-		
-		<div class="karta karta--sloupec">
-			<p class="karta karta--sloupec karta--datum">6. 10. 2020</p>
-			<h3>Na Kubu s PCR testem</h3>
-			<p>Při vstupu do země se buď musíte prokázat negativním PCR testem na Covid-19, který byl proveden max. 72 hodin předpříletem do destinace.</p>
-		</div>
-	</div>
-	
-<footer>©2021, Czechitas</footer>	
-</body>
-
-</html>
+		<section class="sluzbicky">
+			<h2>Služby</h2>
+			<div class="obsah">
+				<div class="sedyramecek sedyramecek--vycentrovany sedyramecek--hlavni">
+					<h3>Nošení zavazedel</h3>
+					<p>Celou vaši cestu vás bude doprovázet nosič zavazadel</p>
+				</div>
+				<div class="sedyramecek sedyramecek--vycentrovany">
+					<h3>Vějíř</h3>
+					<p>Každé poledne 1h ovívání.</p>
+				</div>
+				<div class="sedyramecek sedyramecek--vycentrovany">
+					<h3>Pojištění</h3>
+					<p>Platíme za vás základní pojištění zavazadel po celou dobu pobytu.</p>
+				</div>
+			</div>
+		</section> -->

@@ -1,0 +1,9 @@
+:root {
+    --hlavni-barva: #F03000;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 15px 10px 30px 10px;
+    text-align: center;
+}
